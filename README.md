@@ -1,0 +1,2 @@
+# Implicit Ordering Resolution Error in Scala
+This example demonstrates a common error related to implicit parameter resolution in Scala.  The `MyClass` uses an implicit `Ordering[T]` in its `myMethod`.  While it works for `Int` because an implicit `Ordering[Int]` is provided, attempting to use it with a `String` without providing an implicit `Ordering[String]` results in a compilation error.
